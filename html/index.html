@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The best source of Boom Arena statistics on the Internet.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BoomAPI - Boom Arena Statistics</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="left-header">
+            <a href="/about">About</a>
+        </div>
+        <a href="/" aria-label="Homepage" style="height: 100%"><img src="assets/header/logo.svg" alt="BoomAPI Logo" style="height: 100%"></a>
+        <div id="right-header">
+            <a href="/blog">Blog</a>
+        </div>
+    </div>
+    <div id="container">
+        <h1>BoomAPI - Boom Arena Statistics</h1>
+        Select an endpoint and a table to query the BoomAPI database.
+        <hr>
+        <div class="labeled">
+            <label for="endpoint-select">Endpoint</label>
+            <select id="endpoint-select">
+                <option value="leaderboard">leaderboard</option>
+                <option value="player">player</option>
+                <option value="playersearch">playersearch</option>
+                <option value="cards">cards</option>
+                <option value="card">card</option>
+                <option value="topdecks">topdecks</option>
+                <option value="decksearch">decksearch</option>
+                <option value="deck">deck</option>
+                <option value="game">game</option>
+            </select>
+        </div>
+        <div class="labeled">
+            <label for="table-select">Table</label>
+            <select id="table-select">
+            </select>
+        </div>
+        <div id="param-input">
+            <button id="query-button">Query</button>
+        </div>
+        <hr>
+        <div id="response">
+        </div>
+    </div>
+</body>
+
+</html>
